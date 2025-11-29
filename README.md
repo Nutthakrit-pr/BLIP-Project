@@ -28,7 +28,7 @@ and this project is to defined the finetuned NLLB model by using LoRA adapter to
 2.  **Translation (EN-TH):** [facebook/nllb-200-distilled-600M](https://huggingface.co/facebook/nllb-200-distilled-600M)
 
 ## How to Download and Run This Project
-
+[In Cleaned_data_for_BLIP.ipynb : In that file, I've already downloaded and cleaned data from kaggle. you can use the cleaned data in the Release section]
 ### 1. Download
 1. Look for the **"Releases"** section on the right side of this page.
 2. Click on the latest version (e.g., `v1.0`).
@@ -39,9 +39,23 @@ and this project is to defined the finetuned NLLB model by using LoRA adapter to
 1. Find the downloaded file on your computer (usually in your `Downloads` folder).
 2. **Right-click** the zip file and select **"Extract All..."** (Windows) or double-click it (Mac).
 3. Open the new extracted folder.
-4. Double-click the file named **`[YOUR_EXE_OR_SCRIPT_NAME]`** to run it.
+4. Double-click the file named **`[finetune.py]`** to run it.
+   
+    ```bash
 
----
+    python finetune.py
+
+    ```
+    it will take 2-6 hours depends on CPU
+5. Zip file **Final_Adapter** which you will have it when you have already done the finetuning  
+   
+### 3. Test in Complete_BLIP_project.ipynb
+1. Run all in ipynb file
+2. Upload the **Final_Adapter.zip**
+3. Upload some image
+4. Put the Thai reference sentence to describe that image
+5. It will Show the evaluation of this project
+   
 ### ⚠️ Troubleshooting Security Warnings
 Because this software is new, your computer might try to block it. Here is how to bypass those warnings safely:
 
