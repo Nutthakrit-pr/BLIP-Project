@@ -3,12 +3,6 @@ additional Finetuning NLLB for ThaiCaptioning (EN/TH)
 
 This project is a web application that generates descriptive captions for any uploaded image. It uses the **Salesforce BLIP** model for high-quality captioning and the **Facebook NLLB** model to provide instant, high-accuracy translations from English to Thai.
 and this project is to defined the finetuned NLLB model by using LoRA adapter to improve performance of Thai's captioning.
-## Live Demo & Screenshot
-
-**You can try the app live here:** https://huggingface.co/spaces/Nutthakrit/BLIP-Project
-
-<img width="809" height="378" alt="image" src="https://github.com/user-attachments/assets/ffee76a1-dc94-435f-b1a0-a0cb742dbff5" />
-
 
 
 ## Features
